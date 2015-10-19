@@ -486,15 +486,15 @@ public class IMAPSession {
      }
 
     /**
-     * Sends out an IMAP ID command
-     * 
+     * Sends out an IMAP ID command.
+     *
      * @param tag IMAP tag to be used with this command
      * @param items arguments for ID command
      * @param listener the callback
      * @return future object
-     * @throws IMAPSessionException
+     * @throws IMAPSessionException when session is not connected
      */
-    public IMAPChannelFuture executeIDCommand(final String tag, final String items[], final IMAPCommandListener listener) 
+    public IMAPChannelFuture executeIDCommand(final String tag, final String[] items, final IMAPCommandListener listener)
     		throws IMAPSessionException {
         if (state.get() != IMAPSessionState.CONNECTED) {
             throw new IMAPSessionException("Sending ID in invalid state " + state.get());
