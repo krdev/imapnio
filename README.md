@@ -35,7 +35,7 @@ Compile and use it as a regular IMAP client.
 
 ## Contribute
 
-Please refer to the [contributing.md](Contributing.md) for information about how to get involved. We welcome issues, questions, and pull requests. Pull Requests are welcome.
+Please refer to the [contributing.md](contributing.md) for information about how to get involved. We welcome issues, questions, and pull requests. Pull Requests are welcome.
 
 ## Maintainers
 
